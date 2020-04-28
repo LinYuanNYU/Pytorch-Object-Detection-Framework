@@ -1,0 +1,15 @@
+bread,0
+medicine2,1
+bottle1,2
+drink3,3
+can2,4
+drink1,5
+can1,6
+paper_cup,7
+medicine3,8
+paper_plate,9
+drink2,10
+medicine2,11
+bottle2,12
+paper_plate,13
+paper_cup,14
