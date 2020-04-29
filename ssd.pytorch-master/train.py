@@ -25,7 +25,7 @@ parser = argparse.ArgumentParser(
 train_set = parser.add_mutually_exclusive_group()
 parser.add_argument('--dataset', default='VOC', choices=['VOC', 'COCO'],
                     type=str, help='VOC or COCO')
-parser.add_argument('--dataset_root', default='/root/code/Pytorch-object-detection-master/data/trashV2',
+parser.add_argument('--dataset_root', default='/root/code/data/',
                     help='Dataset root directory path')
 parser.add_argument('--basenet', default='vgg16_reducedfc.pth',
                     help='Pretrained base model')
@@ -49,7 +49,7 @@ parser.add_argument('--gamma', default=0.1, type=float,
                     help='Gamma update for SGD')
 parser.add_argument('--visdom', default=False, type=str2bool,
                     help='Use visdom for loss visualization')
-parser.add_argument('--save_folder', default='/code/weights/ssd/',
+parser.add_argument('--save_folder', default='/root/code/weights/ssd/',
                     help='Directory for saving checkpoint models')
 args = parser.parse_args()
 
@@ -199,10 +199,9 @@ def train():
             update_vis_plot(iteration, loss_l.data[0], loss_c.data[0],
                             iter_plot, epoch_plot, 'append')
 
-        if iteration != 0 and iteration % 500 == 0:
+        if iteration != 0 and iteration % 200 == 0:
             print('Saving state, iter:', iteration)
-            torch.save(ssd_net.state_dict(), 'weights/ssd300_VOC_' +
-                       repr(iteration) + '.pth')
+            torch.save(ssd_net.state_dict(), os.path.join(args.save_folder,'ssd300_VOC_'+repr(iteration) + '.pth'))
     torch.save(ssd_net.state_dict(),
                args.save_folder + '' + args.dataset + '.pth')
 

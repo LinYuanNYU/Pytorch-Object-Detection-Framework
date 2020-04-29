@@ -23,7 +23,7 @@ VOC_CLASSES = ( '__background__', # always index 0
                'bottle1','drink1')
 
 # note: if you used our download scripts, this should be right
-VOC_ROOT = osp.join(HOME, "code/Pytorch-object-detection-master/data/trashV2")
+VOC_ROOT = osp.join(HOME, "code/data/")
 
 
 class VOCAnnotationTransform(object):
