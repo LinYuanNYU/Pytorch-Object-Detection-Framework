@@ -2,7 +2,7 @@ from configs.train_args import args
 import collections
 
 import numpy as np
-
+import os
 import torch
 import torch.optim as optim
 from torchvision import transforms
@@ -19,20 +19,15 @@ print('CUDA available: {}'.format(torch.cuda.is_available()))
 
 def train_retinanet():
     from models import retinanet
-    if args.csv_train is None:
-        raise ValueError('Must provide --csv_train when training on COCO,')
 
-    if args.csv_classes is None:
-        raise ValueError('Must provide --csv_classes when training on COCO,')
 
-    dataset_train = CSVDataset(train_file=args.csv_train, class_list=args.csv_classes,
+    dataset_train = CSVDataset(train_file="../annotations.csv", class_list="../classes.csv",
                                transform=transforms.Compose([Normalizer(), Augmenter(), Resizer()]))
 
-    if args.csv_val is None:
-        dataset_val = None
-        print('No validation annotations provided.')
+    if len(open("../test_annotations.csv",'r').readlines())==0:
+        print("Train without evaluation!!")
     else:
-        dataset_val = CSVDataset(train_file=args.csv_val, class_list=args.csv_classes,
+        dataset_val = CSVDataset(train_file="../test_annotations.csv", class_list="../classes.csv",
                                  transform=transforms.Compose([Normalizer(), Resizer()]))
 
     sampler = AspectRatioBasedSampler(dataset_train, batch_size=2, drop_last=False)
@@ -124,12 +119,11 @@ def train_retinanet():
                 print(e)
                 continue
 
-        if args.dataset == 'csv' and args.csv_val is not None:
+        if dataset_val is not None:
 
             print('Evaluating dataset')
 
             mAP = eval_retinanet.evaluate(dataset_val, retinanet)
-            print("mAP: ",mAP)
 
         scheduler.step(np.mean(epoch_loss))
 
