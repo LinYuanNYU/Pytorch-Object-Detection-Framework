@@ -29,7 +29,7 @@ class SSD(nn.Module):
         super(SSD, self).__init__()
         self.phase = phase
         self.num_classes = num_classes
-        self.priorbox = PriorBox(self.cfg)
+        self.priorbox = PriorBox(voc)
         self.priors = Variable(self.priorbox.forward(), volatile=True)
         self.size = size
 

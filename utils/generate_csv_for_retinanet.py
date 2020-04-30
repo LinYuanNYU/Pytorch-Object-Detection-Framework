@@ -1,6 +1,7 @@
 import os
 import xml.etree.ElementTree as ET
-
+from tqdm import tqdm
+from termcolor import colored,cprint
 def generate_csv(root,
                  out_train='annotations.csv',out_test = 'test_annotations.csv',out_classes='classes.csv'):
     train_list = open(os.path.join(root, "ImageSets/Main/train.txt"), 'r').readlines()
@@ -11,8 +12,8 @@ def generate_csv(root,
     annotations_train = open(out_train, 'w')
     annotations_test = open(out_test, 'w')
     classes = []
-    for index, xml in enumerate(train_list):
-        print(xml, str((100 * index) / len(train_list)) + "%")
+    cprint("generate training csv for retinaNet...",'green')
+    for index, xml in enumerate(tqdm(train_list)):
         tree = ET.parse(os.path.join(ann_path, xml.split("\n")[0] + ".xml"))
         root = tree.getroot()
         objects = root.findall('object')
@@ -36,8 +37,8 @@ def generate_csv(root,
     annotations_train.flush()
     classfile.flush()
 
-    for index, xml in enumerate(test_list):
-        print(xml, str((100 * index) / len(test_list)) + "%")
+    cprint("generate testing csv for retinaNet...",'green')
+    for index, xml in enumerate(tqdm(test_list)):
         tree = ET.parse(os.path.join(ann_path, xml.split("\n")[0] + ".xml"))
         root = tree.getroot()
         objects = root.findall('object')

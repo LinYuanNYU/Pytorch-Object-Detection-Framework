@@ -15,6 +15,7 @@ import torch.nn.init as init
 import torch.utils.data as data
 import numpy as np
 from configs.config import *
+from termcolor import cprint,colored
 from data.vocDataSet import VOCDetection
 def detection_collate(batch):
     """Custom collate fn for dealing with batches of images that have a different
@@ -50,10 +51,10 @@ if not os.path.exists(args.save_folder):
     os.mkdir(args.save_folder)
 
 
-def train(size,num_classes):
+def train_ssd(size,num_classes):
     cfg = voc
     dataset = VOCDetection(root=args.dataset_root,
-                           transform=SSDAugmentation(cfg['min_dim'],
+                           transform=SSDAugmentation(size,
                                                      MEANS))
 
     if args.visdom:

@@ -11,6 +11,8 @@ retinanet_args.add_argument('--epochs', default='50', help='epochs to train',typ
 ssd_args = subparsers.add_parser("ssd")
 ssd_args.add_argument('--dataset_root', default='data/trashV2',
                     help='Directory path where stores the data in VOC format')
+ssd_args.add_argument('--ssd_dim', default=300,
+                    help='ssd size')
 ssd_args.add_argument('--basenet', default='vgg16_reducedfc.pth',
                     help='Pretrained base model')
 ssd_args.add_argument('--batch_size', default=32, type=int,
@@ -33,6 +35,6 @@ ssd_args.add_argument('--gamma', default=0.1, type=float,
                     help='Gamma update for SGD')
 ssd_args.add_argument('--visdom', default=False,
                     help='Use visdom for loss visualization')
-ssd_args.add_argument('--save_folder', default='/root/code/weights/ssd/',
+ssd_args.add_argument('--save_folder', default='../weights/ssd/',
                     help='Directory for saving checkpoint models')
 args = parser.parse_args()
