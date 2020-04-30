@@ -14,11 +14,27 @@ import torch.backends.cudnn as cudnn
 import torch.nn.init as init
 import torch.utils.data as data
 import numpy as np
-import argparse
-from configs.config import voc
+from configs.config import *
+from data.vocDataSet import VOCDetection
+def detection_collate(batch):
+    """Custom collate fn for dealing with batches of images that have a different
+    number of associated object annotations (bounding boxes).
 
-def str2bool(v):
-    return v.lower() in ("yes", "true", "t", "1")
+    Arguments:
+        batch: (tuple) A tuple of tensor images and lists of annotations
+
+    Return:
+        A tuple containing:
+            1) (tensor) batch of images stacked on their 0 dim
+            2) (list of tensors) annotations for a given image are stacked on
+                                 0 dim
+    """
+    targets = []
+    imgs = []
+    for sample in batch:
+        imgs.append(sample[0])
+        targets.append(torch.FloatTensor(sample[1]))
+    return torch.stack(imgs, 0), targets
 
 if torch.cuda.is_available():
     if args.cuda:
@@ -34,7 +50,7 @@ if not os.path.exists(args.save_folder):
     os.mkdir(args.save_folder)
 
 
-def train():
+def train(size,num_classes):
     cfg = voc
     dataset = VOCDetection(root=args.dataset_root,
                            transform=SSDAugmentation(cfg['min_dim'],
@@ -44,7 +60,7 @@ def train():
         import visdom
         viz = visdom.Visdom()
 
-    ssd_net = build_ssd('train', cfg['min_dim'], cfg['num_classes'])
+    ssd_net = build_ssd('train', size, num_classes)
     #print("=================="+str(cfg['min_dim'])+str(cfg['num_classes']))
     net = ssd_net
 
@@ -72,7 +88,7 @@ def train():
 
     optimizer = optim.SGD(net.parameters(), lr=args.lr, momentum=args.momentum,
                           weight_decay=args.weight_decay)
-    criterion = MultiBoxLoss(cfg['num_classes'], 0.5, True, 0, True, 3, 0.5,
+    criterion = MultiBoxLoss(num_classes, 0.5, True, 0, True, 3, 0.5,
                              False, args.cuda)
 
     net.train()
@@ -153,9 +169,9 @@ def train():
 
         if iteration != 0 and iteration % 200 == 0:
             print('Saving state, iter:', iteration)
-            torch.save(ssd_net.state_dict(), os.path.join(args.save_folder,'ssd300_VOC_'+repr(iteration) + '.pth'))
+            torch.save(ssd_net.state_dict(), os.path.join(args.save_folder,'ssd'+str(size)+'_VOC_'+repr(iteration) + '.pth'))
     torch.save(ssd_net.state_dict(),
-               args.save_folder + '' + args.dataset + '.pth')
+               args.save_folder + 'Final_model.pth')
 
 
 def adjust_learning_rate(optimizer, gamma, step):
