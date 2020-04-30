@@ -31,7 +31,7 @@ ssd_args.add_argument('--weight_decay', default=5e-4, type=float,
                     help='Weight decay for SGD')
 ssd_args.add_argument('--gamma', default=0.1, type=float,
                     help='Gamma update for SGD')
-ssd_args.add_argument('--visdom', default=False, type=str2bool,
+ssd_args.add_argument('--visdom', default=False,
                     help='Use visdom for loss visualization')
 ssd_args.add_argument('--save_folder', default='/root/code/weights/ssd/',
                     help='Directory for saving checkpoint models')

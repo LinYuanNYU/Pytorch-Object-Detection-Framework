@@ -21,13 +21,13 @@ def train_retinanet():
     from models import retinanet
 
 
-    dataset_train = CSVDataset(train_file="../annotations.csv", class_list="../classes.csv",
+    dataset_train = CSVDataset(train_file="annotations.csv", class_list="classes.csv",
                                transform=transforms.Compose([Normalizer(), Augmenter(), Resizer()]))
 
     if len(open("../test_annotations.csv",'r').readlines())==0:
         print("Train without evaluation!!")
     else:
-        dataset_val = CSVDataset(train_file="../test_annotations.csv", class_list="../classes.csv",
+        dataset_val = CSVDataset(train_file="test_annotations.csv", class_list="classes.csv",
                                  transform=transforms.Compose([Normalizer(), Resizer()]))
 
     sampler = AspectRatioBasedSampler(dataset_train, batch_size=2, drop_last=False)

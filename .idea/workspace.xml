@@ -2,23 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6cf25e73-9c03-4c6a-941e-1ca9e96f64c8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/configs/config.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/ssd/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/ssd/layers/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/ssd/layers/box_utils.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/ssd/layers/functions/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/ssd/layers/functions/detection.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/ssd/layers/functions/prior_box.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/ssd/layers/modules/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/ssd/layers/modules/l2norm.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/ssd/layers/modules/multibox_loss.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/ssd/ssd.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/trains/train_ssd.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/augmentations.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/vocDataSet.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/configs/train_args.py" beforeDir="false" afterPath="$PROJECT_DIR$/configs/train_args.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/TrashData.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/TrashData.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/train.py" beforeDir="false" afterPath="$PROJECT_DIR$/train.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trains/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/trains/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/trains/train_retinanet.py" beforeDir="false" afterPath="$PROJECT_DIR$/trains/train_retinanet.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/utils/generate_csv_for_retinanet.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/generate_csv_for_retinanet.py" afterDir="false" />
     </list>
@@ -33,8 +23,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/utils/generate_csv_for_retinanet.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" selection-start-line="2" selection-end-line="2" />
+            <state relative-caret-position="294">
+              <caret line="55" column="51" selection-start-line="55" selection-start-column="51" selection-end-line="55" selection-end-column="51" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -43,26 +33,40 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/configs/train_args.py">
+        <entry file="file://$PROJECT_DIR$/annotations.csv">
+          <provider selected="true" editor-type-id="csv-text-editor">
+            <state relative-caret-position="-84838" />
+          </provider>
+          <provider editor-type-id="csv-table-editor">
+            <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/data/TrashData.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="127" selection-start-line="6" selection-start-column="127" selection-end-line="6" selection-end-column="127" />
+            <state relative-caret-position="1135">
+              <caret line="88" column="35" selection-start-line="88" selection-start-column="24" selection-end-line="88" selection-end-column="35" />
+              <folding>
+                <element signature="e#0#47#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ssd.pytorch-master/data/config.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-40" />
+        <entry file="file://$PROJECT_DIR$/test_annotations.csv">
+          <provider selected="true" editor-type-id="csv-text-editor" />
+          <provider editor-type-id="csv-table-editor">
+            <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/trains/train_retinanet.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="485">
-              <caret line="126" lean-forward="true" selection-start-line="126" selection-end-line="126" />
+            <state relative-caret-position="116">
+              <caret line="23" selection-start-line="23" selection-end-line="23" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
               </folding>
@@ -71,10 +75,28 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/configs/config.py">
+        <entry file="file://$PROJECT_DIR$/utils/augmenter.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="26" column="1" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
+            <state relative-caret-position="160">
+              <caret line="104" selection-start-line="104" selection-end-line="104" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/models/retinanet/retinanet.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" selection-start-line="5" selection-end-line="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/models/__init__.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" selection-start-line="2" selection-end-line="2" />
             </state>
           </provider>
         </entry>
@@ -83,7 +105,7 @@
         <entry file="file://$PROJECT_DIR$/train.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="105">
-              <caret line="7" column="32" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
+              <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
@@ -92,8 +114,12 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/utils/__init__.py">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$USER_HOME$/anaconda3/envs/torch/lib/python3.6/codecs.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="145">
+              <caret line="308" selection-start-line="308" selection-end-line="308" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -116,6 +142,11 @@
       <find>voc</find>
       <find>VOCAnnotationTransform</find>
       <find>target_transform</find>
+      <find>raise_from</find>
+      <find>format</find>
+      <find>format should be</find>
+      <find>format should</find>
+      <find>image_names</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -139,7 +170,6 @@
         <option value="$PROJECT_DIR$/utils/anchors.py" />
         <option value="$PROJECT_DIR$/trains/train.py" />
         <option value="$PROJECT_DIR$/trains/dog_classification.py" />
-        <option value="$PROJECT_DIR$/data/TrashData.py" />
         <option value="$PROJECT_DIR$/utils/augmenter.py" />
         <option value="$PROJECT_DIR$/annotations.csv" />
         <option value="$PROJECT_DIR$/classes.csv" />
@@ -163,7 +193,6 @@
         <option value="$PROJECT_DIR$/data/handledata.py" />
         <option value="$PROJECT_DIR$/evals/__init__.py" />
         <option value="$PROJECT_DIR$/evals/eval_retinanet.py" />
-        <option value="$PROJECT_DIR$/trains/__init__.py" />
         <option value="$PROJECT_DIR$/test.py" />
         <option value="$PROJECT_DIR$/configs/test_args.py" />
         <option value="$PROJECT_DIR$/configs/config.py" />
@@ -171,10 +200,12 @@
         <option value="$PROJECT_DIR$/trains/train_ssd.py" />
         <option value="$PROJECT_DIR$/utils/vocDataSet.py" />
         <option value="$PROJECT_DIR$/utils/classes.csv" />
-        <option value="$PROJECT_DIR$/utils/generate_csv_for_retinanet.py" />
-        <option value="$PROJECT_DIR$/train.py" />
         <option value="$PROJECT_DIR$/configs/train_args.py" />
+        <option value="$PROJECT_DIR$/trains/__init__.py" />
         <option value="$PROJECT_DIR$/trains/train_retinanet.py" />
+        <option value="$PROJECT_DIR$/train.py" />
+        <option value="$PROJECT_DIR$/utils/generate_csv_for_retinanet.py" />
+        <option value="$PROJECT_DIR$/data/TrashData.py" />
       </list>
     </option>
   </component>
@@ -205,7 +236,18 @@
             <path>
               <item name="Pytorch-object-detection" type="b2602c69:ProjectViewProjectNode" />
               <item name="Pytorch-object-detection" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Pytorch-object-detection" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Pytorch-object-detection" type="462c0819:PsiDirectoryNode" />
               <item name="models" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Pytorch-object-detection" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Pytorch-object-detection" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
+              <item name="retinanet" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Pytorch-object-detection" type="b2602c69:ProjectViewProjectNode" />
@@ -271,7 +313,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.generate_csv_for_retinanet">
+  <component name="RunManager" selected="Python.train">
     <configuration type="PythonConfigurationType" factoryName="Python">
       <module name="Pytorch_object_detection" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -286,6 +328,28 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TrashData" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Pytorch_object_detection" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/data" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/data/TrashData.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -338,7 +402,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="test_csv" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="train" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Pytorch_object_detection" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -346,35 +410,13 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/pytorch-retinanet-master" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pytorch-retinanet-master/test_csv.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="train_args" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Pytorch_object_detection" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/configs" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/configs/train_args.py" />
-      <option name="PARAMETERS" value="retinanet" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/train.py" />
+      <option name="PARAMETERS" value="retinanet --dataset_root ../data/trashV2/" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
@@ -405,19 +447,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.test_csv" />
-      <item itemvalue="Python.train_args" />
       <item itemvalue="Python.generate_csv_for_retinanet" />
       <item itemvalue="Python.train_with_csv" />
       <item itemvalue="Python.handledata" />
+      <item itemvalue="Python.TrashData" />
+      <item itemvalue="Python.train" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.train" />
+        <item itemvalue="Python.TrashData" />
         <item itemvalue="Python.generate_csv_for_retinanet" />
         <item itemvalue="Python.handledata" />
         <item itemvalue="Python.train_with_csv" />
-        <item itemvalue="Python.train_args" />
-        <item itemvalue="Python.test_csv" />
       </list>
     </recent_temporary>
   </component>
@@ -443,12 +485,12 @@
       <workItem from="1587599027265" duration="1464000" />
       <workItem from="1587627946473" duration="3459000" />
       <workItem from="1587786882935" duration="818000" />
-      <workItem from="1588218190867" duration="3889000" />
+      <workItem from="1588218190867" duration="6413000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41673000" />
+    <option name="totallyTimeSpent" value="44197000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -460,7 +502,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32876712" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.2890411" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.36438355" />
+      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.36438355" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -491,14 +533,14 @@
           <option name="timeStamp" value="6" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/models/retinanet/retinanet.py</url>
-          <line>5</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/M2Det-master/data/train_with_csv.py</url>
           <line>7</line>
           <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/data/TrashData.py</url>
+          <line>44</line>
+          <option name="timeStamp" value="23" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -511,41 +553,12 @@
     <SUITE FILE_PATH="coverage/Pytorch_object_detection$generateCsv.coverage" NAME="generateCsv Coverage Results" MODIFIED="1586833962599" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pytorch-retinanet-master" />
     <SUITE FILE_PATH="coverage/Pytorch_object_detection$config.coverage" NAME="config Coverage Results" MODIFIED="1586748631792" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/configs" />
     <SUITE FILE_PATH="coverage/Pytorch_object_detection$train_args.coverage" NAME="train_args Coverage Results" MODIFIED="1586913519713" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/configs" />
+    <SUITE FILE_PATH="coverage/Pytorch_object_detection$TrashData.coverage" NAME="TrashData Coverage Results" MODIFIED="1588223194931" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data" />
     <SUITE FILE_PATH="coverage/Pytorch_object_detection$train_with_csv.coverage" NAME="train_with_csv Coverage Results" MODIFIED="1586925987692" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/M2Det-master/data" />
     <SUITE FILE_PATH="coverage/Pytorch_object_detection$generate_csv_for_retinanet.coverage" NAME="generate_csv_for_retinanet Coverage Results" MODIFIED="1588220954501" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Pytorch_object_detection$train.coverage" NAME="train Coverage Results" MODIFIED="1588224429722" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/M2Det-master/data/coco_labels.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/trashdata/annotations.csv" />
-    <entry file="file://$PROJECT_DIR$/M2Det-master/data/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="38" selection-start-line="5" selection-start-column="38" selection-end-line="5" selection-end-column="38" />
-          <folding>
-            <element signature="e#85#171#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/M2Det-master/data/test.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="9" lean-forward="true" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/M2Det-master/data/anchors.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/trains/train_m2det.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="18" selection-start-line="18" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/M2Det-master/utils/pycocotools/_mask.pyx">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -662,24 +675,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/trains/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/evals/eval_retinanet.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2175">
           <caret line="151" column="12" selection-start-line="151" selection-start-column="12" selection-end-line="151" selection-end-column="12" />
           <folding>
             <element signature="e#0#37#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/TrashData.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#47#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -802,39 +803,98 @@
     <entry file="file://$PROJECT_DIR$/utils/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/configs/train_args.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="33" column="47" selection-start-line="33" selection-start-column="47" selection-end-line="33" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trains/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="44" selection-start-column="44" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/augmenter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="104" selection-start-line="104" selection-end-line="104" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/envs/torch/lib/python3.6/codecs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="308" selection-start-line="308" selection-end-line="308" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/train.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
-          <caret line="7" column="32" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
+          <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/configs/train_args.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="127" selection-start-line="6" selection-start-column="127" selection-end-line="6" selection-end-column="127" />
-        </state>
+    <entry file="file://$PROJECT_DIR$/annotations.csv">
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="-84838" />
+      </provider>
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_annotations.csv">
+      <provider selected="true" editor-type-id="csv-text-editor" />
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/utils/generate_csv_for_retinanet.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        <state relative-caret-position="294">
+          <caret line="55" column="51" selection-start-line="55" selection-start-column="51" selection-end-line="55" selection-end-column="51" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/models/retinanet/retinanet.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/trains/train_retinanet.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="485">
-          <caret line="126" lean-forward="true" selection-start-line="126" selection-end-line="126" />
+        <state relative-caret-position="116">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/TrashData.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1135">
+          <caret line="88" column="35" selection-start-line="88" selection-start-column="24" selection-end-line="88" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#47#0" expanded="true" />
           </folding>
         </state>
       </provider>

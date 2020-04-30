@@ -2,7 +2,7 @@ import os
 import xml.etree.ElementTree as ET
 
 def generate_csv(root,
-                 out_train='../annotations.csv',out_test = '../test_annotations.csv',out_classes='../classes.csv'):
+                 out_train='annotations.csv',out_test = 'test_annotations.csv',out_classes='classes.csv'):
     train_list = open(os.path.join(root, "ImageSets/Main/train.txt"), 'r').readlines()
     test_list = open(os.path.join(root, "ImageSets/Main/test.txt"), 'r').readlines()
     ann_path = os.path.join(root, "Annotations")
@@ -26,11 +26,15 @@ def generate_csv(root,
             if labelname.text not in classes:
                 classes.append(labelname.text)
                 classfile.write(classes[-1] + "," + str(classes.index(labelname.text)) + "\n")
-            write = os.path.join(img_path, xml.split("\n")[
+            if index==len(train_list)-1:
+                write = os.path.join(img_path, xml.split("\n")[
+                    0] + ".jpg") + "," + xmin.text + "," + ymin.text + "," + xmax.text + "," + ymax.text + "," + labelname.text
+            else:
+                write = os.path.join(img_path, xml.split("\n")[
                 0] + ".jpg") + "," + xmin.text + "," + ymin.text + "," + xmax.text + "," + ymax.text + "," + labelname.text + "\n"
             annotations_train.write(write)
-        annotations_train.flush()
-        classfile.flush()
+    annotations_train.flush()
+    classfile.flush()
 
     for index, xml in enumerate(test_list):
         print(xml, str((100 * index) / len(test_list)) + "%")
@@ -44,7 +48,11 @@ def generate_csv(root,
             ymin = box.find('ymin')
             xmax = box.find('xmax')
             ymax = box.find('ymax')
-            write = os.path.join(img_path,
-                                 xml + ".jpg") + "," + xmin.text + "," + ymin.text + "," + xmax.text + "," + ymax.text + "," + labelname.text + "\n"
+            if (index==len(test_list)-1):
+                write = os.path.join(img_path,
+                                     xml.split("\n")[0] + ".jpg") + "," + xmin.text + "," + ymin.text + "," + xmax.text + "," + ymax.text + "," + labelname.text
+            else:
+                write = os.path.join(img_path,
+                                 xml.split("\n")[0] + ".jpg") + "," + xmin.text + "," + ymin.text + "," + xmax.text + "," + ymax.text + "," + labelname.text + "\n"
             annotations_test.write(write)
-        annotations_test.flush()
+    annotations_test.flush()
