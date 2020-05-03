@@ -59,7 +59,7 @@ This framework easily enable you to train your own object detetor with multiple 
 
 Running ```train.py``` to train your model. 
 
-```python
+```
 usage: train.py [-h] {retinanet,ssd} ...
 
 positional arguments:
@@ -71,7 +71,7 @@ optional arguments:
 
 For example, you want to use **RetinaNet** to implement your object detector, you can see help info by input:
 
-```python
+```
 python train.py retinanet --help
 ```
 
