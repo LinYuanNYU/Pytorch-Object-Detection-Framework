@@ -7,9 +7,7 @@ This framework easily enable you to train your own object detetor with multiple 
 
 
 
-
-
-[TOC]
+[Dataset Format](#Dataset-Format)
 
 
 
