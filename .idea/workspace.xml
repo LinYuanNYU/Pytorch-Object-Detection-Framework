@@ -2,13 +2,44 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9ed66f88-c466-4489-8703-1b0453619365" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/configs/.ipynb_checkpoints/__init__-checkpoint.py" beforeDir="false" afterPath="$PROJECT_DIR$/eval.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configs/.ipynb_checkpoints/config-checkpoint.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/eval-checkpoint.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/train-checkpoint.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configs/.ipynb_checkpoints/__init__-checkpoint.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configs/.ipynb_checkpoints/eval_args-checkpoint.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/configs/.ipynb_checkpoints/train_args-checkpoint.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/augdata.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/data/augdata.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/train.py" beforeDir="false" afterPath="$PROJECT_DIR$/train.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trains/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/trains/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trains/train_retinanet.py" beforeDir="false" afterPath="$PROJECT_DIR$/trains/train_retinanet.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configs/eval_args.py" beforeDir="false" afterPath="$PROJECT_DIR$/configs/eval_args.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configs/train_args.py" beforeDir="false" afterPath="$PROJECT_DIR$/configs/train_args.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/.ipynb_checkpoints/TrashData-checkpoint.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/.ipynb_checkpoints/augdata-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/.ipynb_checkpoints/vocDataSet-checkpoint.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/DogData.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/TrashData.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/augdata.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/handledata.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/trashV2/.ipynb_checkpoints/Untitled-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/trashV2/Untitled.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/trashV2/annotations_cache/annots.pkl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/trashV2/results/VOC2007/Main/comp4_det_test_bottle1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/trashV2/results/VOC2007/Main/comp4_det_test_bottle2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/trashV2/results/VOC2007/Main/comp4_det_test_bread.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/trashV2/results/VOC2007/Main/comp4_det_test_can1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/trashV2/results/VOC2007/Main/comp4_det_test_can2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/trashV2/results/VOC2007/Main/comp4_det_test_drink1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/trashV2/results/VOC2007/Main/comp4_det_test_drink2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/trashV2/results/VOC2007/Main/comp4_det_test_drink3.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/trashV2/results/VOC2007/Main/comp4_det_test_medicine2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/trashV2/results/VOC2007/Main/comp4_det_test_medicine3.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/trashV2/results/VOC2007/Main/comp4_det_test_paper_cup.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/trashV2/results/VOC2007/Main/comp4_det_test_paper_plate.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/vocDataSet.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/evals/.ipynb_checkpoints/eval_retinanet-checkpoint.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/evals/.ipynb_checkpoints/eval_ssd-checkpoint.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/evals/eval_ssd.py" beforeDir="false" afterPath="$PROJECT_DIR$/evals/eval_ssd.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trains/.ipynb_checkpoints/train_retinanet-checkpoint.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/trains/.ipynb_checkpoints/train_ssd-checkpoint.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/.ipynb_checkpoints/generate_csv_for_retinanet-checkpoint.py" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,51 +52,78 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/train.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="30" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
+            <state relative-caret-position="240">
+              <caret line="16" column="30" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/trains/__init__.py">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/eval.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
-              <folding>
-                <element signature="e#0#10#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="435">
+              <caret line="34" column="21" selection-start-line="34" selection-start-column="21" selection-end-line="34" selection-end-column="21" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/trains/train_retinanet.py">
+        <entry file="file://$PROJECT_DIR$/evals/eval_ssd.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="167">
-              <caret line="26" column="17" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
+            <state relative-caret-position="683">
+              <caret line="48" column="56" selection-start-line="48" selection-start-column="56" selection-end-line="48" selection-end-column="56" />
               <folding>
-                <element signature="e#0#35#0" expanded="true" />
+                <element signature="e#238#275#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/evals/eval_retinanet.py">
+        <entry file="file://$PROJECT_DIR$/datas/vocDataSet.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/datas/TrashData.py">
           <provider selected="true" editor-type-id="text-editor">
             <state>
               <folding>
-                <element signature="e#0#37#0" expanded="true" />
+                <element signature="e#0#47#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/datas/handledata.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/datas/DogData.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <element signature="e#0#24#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/datas/__init__.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/configs/eval_args.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" column="60" selection-start-line="6" selection-start-column="60" selection-end-line="6" selection-end-column="60" />
             </state>
           </provider>
         </entry>
@@ -73,8 +131,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/configs/train_args.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="22" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
+            <state relative-caret-position="165">
+              <caret line="11" column="54" selection-start-line="11" selection-start-column="54" selection-end-line="11" selection-end-column="54" />
             </state>
           </provider>
         </entry>
@@ -88,17 +146,26 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>data</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/configs/train_args.py" />
         <option value="$PROJECT_DIR$/eval.py" />
         <option value="$PROJECT_DIR$/trains/__init__.py" />
         <option value="$PROJECT_DIR$/train.py" />
         <option value="$PROJECT_DIR$/trains/train_retinanet.py" />
+        <option value="$PROJECT_DIR$/data/vocDataSet.py" />
+        <option value="$PROJECT_DIR$/configs/eval_args.py" />
+        <option value="$PROJECT_DIR$/configs/train_args.py" />
+        <option value="$PROJECT_DIR$/evals/eval_ssd.py" />
+        <option value="$PROJECT_DIR$/datas/__init__.py" />
       </list>
     </option>
   </component>
@@ -121,6 +188,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -131,17 +199,32 @@
             <path>
               <item name="Pytorch-object-detection" type="b2602c69:ProjectViewProjectNode" />
               <item name="Pytorch-object-detection" type="462c0819:PsiDirectoryNode" />
-              <item name="trains" type="462c0819:PsiDirectoryNode" />
+              <item name="configs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Pytorch-object-detection" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Pytorch-object-detection" type="462c0819:PsiDirectoryNode" />
+              <item name="datas" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Pytorch-object-detection" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Pytorch-object-detection" type="462c0819:PsiDirectoryNode" />
+              <item name="evals" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Pytorch-object-detection" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Pytorch-object-detection" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -204,21 +287,22 @@
       <workItem from="1589511886247" duration="798000" />
       <workItem from="1589599082457" duration="740000" />
       <workItem from="1590651302011" duration="726000" />
+      <workItem from="1590898576684" duration="845000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3566000" />
+    <option name="totallyTimeSpent" value="4411000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2657512" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26979" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32876712" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -246,15 +330,50 @@
     <entry file="file://$PROJECT_DIR$/configs/.ipynb_checkpoints/train_args-checkpoint.py" />
     <entry file="file://$PROJECT_DIR$/yolo2-pytorch-master/train.py" />
     <entry file="file://$PROJECT_DIR$/yolo2-pytorch-master/datasets/pascal_voc.py" />
-    <entry file="file://$PROJECT_DIR$/eval.py">
+    <entry file="file://$PROJECT_DIR$/data/augdata.ipynb">
+      <provider selected="true" editor-type-id="jupyter-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trains/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trains/train_retinanet.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
+        <state relative-caret-position="167">
+          <caret line="26" column="17" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
           <folding>
-            <element signature="e#0#10#0" expanded="true" />
+            <element signature="e#0#35#0" expanded="true" />
           </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trains/train_ssd.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="645">
+          <caret line="43" column="27" selection-start-line="43" selection-start-column="27" selection-end-line="43" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/vocDataSet.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="840">
+          <caret line="56" selection-start-line="56" selection-end-line="56" />
+          <folding>
+            <element signature="e#177#198#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/evals/.ipynb_checkpoints/eval_ssd-checkpoint.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/configs/config.py">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/evals/eval_retinanet.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -265,45 +384,70 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/configs/train_args.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="22" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/augdata.ipynb">
-      <provider selected="true" editor-type-id="jupyter-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/trains/train_ssd.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1414">
-          <caret line="43" column="27" selection-start-line="43" selection-start-column="27" selection-end-line="43" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/trains/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/train.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="30" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
+        <state relative-caret-position="240">
+          <caret line="16" column="30" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/trains/train_retinanet.py">
+    <entry file="file://$PROJECT_DIR$/eval.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="26" column="17" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
+        <state relative-caret-position="435">
+          <caret line="34" column="21" selection-start-line="34" selection-start-column="21" selection-end-line="34" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/configs/eval_args.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="60" selection-start-line="6" selection-start-column="60" selection-end-line="6" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/configs/train_args.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="54" selection-start-line="11" selection-start-column="54" selection-end-line="11" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/datas/vocDataSet.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/datas/TrashData.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
           <folding>
-            <element signature="e#0#35#0" expanded="true" />
+            <element signature="e#0#47#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/datas/handledata.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/datas/DogData.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/datas/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/evals/eval_ssd.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="683">
+          <caret line="48" column="56" selection-start-line="48" selection-start-column="56" selection-end-line="48" selection-end-column="56" />
+          <folding>
+            <element signature="e#238#275#0" expanded="true" />
           </folding>
         </state>
       </provider>

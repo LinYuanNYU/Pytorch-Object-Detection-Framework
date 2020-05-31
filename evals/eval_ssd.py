@@ -9,11 +9,11 @@ import torch
 import torch.nn as nn
 import torch.backends.cudnn as cudnn
 from torch.autograd import Variable
-from data import VOC_ROOT, VOCAnnotationTransform, VOCDetection, BaseTransform
-from data import VOC_CLASSES as labelmap
+from datas.vocDataSet import VOCAnnotationTransform, VOCDetection, BaseTransform
+from datas.vocDataSet import VOC_CLASSES as labelmap
 import torch.utils.data as data
 
-from ssd import build_ssd
+from models.ssd.ssd import build_ssd
 
 import sys
 import os
@@ -46,7 +46,7 @@ parser.add_argument('--top_k', default=5, type=int,
                     help='Further restrict the number of predictions to parse')
 parser.add_argument('--cuda', default=True, type=str2bool,
                     help='Use cuda to train model')
-parser.add_argument('--voc_root', default=VOC_ROOT,
+parser.add_argument('--voc_root', default="datas/trashV2",
                     help='Location of VOC root directory')
 parser.add_argument('--cleanup', default=True, type=str2bool,
                     help='Cleanup and remove results files following eval')
@@ -66,9 +66,9 @@ if torch.cuda.is_available():
 else:
     torch.set_default_tensor_type('torch.FloatTensor')
 
-annopath = os.path.join(args.voc_root, 'VOC2007', 'Annotations', '%s.xml')
-imgpath = os.path.join(args.voc_root, 'VOC2007', 'JPEGImages', '%s.jpg')
-imgsetpath = os.path.join(args.voc_root, 'VOC2007', 'ImageSets',
+annopath = os.path.join(args.voc_root, 'Annotations', '%s.xml')
+imgpath = os.path.join(args.voc_root, 'JPEGImages', '%s.jpg')
+imgsetpath = os.path.join(args.voc_root, 'ImageSets',
                           'Main', '{:s}.txt')
 YEAR = '2007'
 devkit_path = args.voc_root + 'VOC' + YEAR
