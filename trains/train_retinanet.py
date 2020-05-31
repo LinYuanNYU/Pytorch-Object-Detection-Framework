@@ -112,7 +112,6 @@ def train_retinanet():
                 print(
                     'Epoch: {} | Iteration: {} | Classification loss: {:1.5f} | Regression loss: {:1.5f} | Running loss: {:1.5f}'.format(
                         epoch_num, iter_num, float(classification_loss), float(regression_loss), np.mean(loss_hist)))
-
                 del classification_loss
                 del regression_loss
             except Exception as e:
@@ -127,7 +126,7 @@ def train_retinanet():
 
         scheduler.step(np.mean(epoch_loss))
 
-        torch.save(retinanet.module, '{}_retinanet_{}.pth'.format(args.dataset, epoch_num))
+        torch.save(retinanet.module, '{}_retinanet_{}.pth'.format("csv", epoch_num))
 
     retinanet.eval()
 

@@ -14,5 +14,4 @@ elif sys.argv[1]=="ssd":
     classes = pd.DataFrame(pd.read_csv("./classes.csv",header=None, decimal=","))
     VOC_classes = ['__background__']
     VOC_classes.extend(classes.loc[:,0].tolist())
-    print(VOC_classes)
     train_ssd.train_ssd(args.ssd_dim,len(VOC_classes))
